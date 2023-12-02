@@ -1,0 +1,37 @@
+header {
+  background-image: url(../img/png/hero-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 5.5rem;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__info {
+  }
+  &__title {
+    max-width: 370px;
+    font-family: $font-family;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 59px;
+    letter-spacing: 0.09em;
+    text-align: left;
+    margin-bottom: 3.1rem;
+    color: $primary-color;
+  }
+  &__descr {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $text-color;
+    margin-bottom: 4.3rem;
+  }
+  &__img {
+    margin-bottom: 15rem;
+  }
+}

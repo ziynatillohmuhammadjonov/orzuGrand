@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../img/svg/medol-logo.svg"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Medol</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="">
+      <div class="container">
+        @@include("./chunk/topnav.html")
+        <nav class="sitenav">
+          <ul class="sitenav__list">
+            <li class="sitenav__item">
+              <a href="#" class="sitenav__link">МАГАЗИН</a>
+            </li>
+            <li class="sitenav__item">
+              <a href="#" class="sitenav__link">О КОМПАНИИ </a>
+            </li>
+            <li class="sitenav__item">
+              <a href="#" class="sitenav__link">ПРОДУКЦИЯ </a>
+            </li>
+            <li class="sitenav__item">
+              <a href="#" class="sitenav__link">УСЛУГИ </a>
+            </li>
+            <li class="sitenav__item">
+              <a href="#" class="sitenav__link">АКЦИИ И НОВОСТИ</a>
+            </li>
+            <li class="sitenav__item">
+              <a href="#" class="sitenav__link">ОБРАТНАЯ СВЯЗЬ</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">@@include('./chunk/hero.html')</div>
+            <div class="swiper-slide">@@include('./chunk/hero.html')</div>
+            <div class="swiper-slide">@@include('./chunk/hero.html')</div>
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </header>
+    <!-- main -->
+    <main>
+      <!-- product section start -->
+      <section class="product">
+        <div class="container">
+          <h2 class="product__title">ПРОДУКЦИЯ</h2>
+          <ul class="product__list">
+            <li class="product__item">
+              <img
+                src="./img/png/product-xirurg.png"
+                alt="xirurgiya"
+                class="product__item-img"
+              />
+              <h3 class="product__item-title">Эндоваскулярная хирургия</h3>
+              <button class="btn product__item-btn">Посмотреть все</button>
+            </li>
+            <li class="product__item">
+              <img
+                src="./img/png/product-diagnostika.png"
+                alt="product-diagnostika"
+                class="product__item-img"
+              />
+              <h3 class="product__item-title">Лабораторная диагностика</h3>
+              <button class="btn product__item-btn">Посмотреть все</button>
+            </li>
+            <li class="product__item">
+              <img
+                src="./img/png/product-kardio.png"
+                alt="product-kardio"
+                class="product__item-img"
+              />
+              <h3 class="product__item-title">Кардиохирургия</h3>
+              <button class="btn product__item-btn">Посмотреть все</button>
+            </li>
+            <li class="product__item">
+              <img
+                src="./img/png/product-diabet.png"
+                alt="product-diabet"
+                class="product__item-img"
+              />
+              <h3 class="product__item-title">ДИАБЕТ</h3>
+              <button class="btn product__item-btn">Посмотреть все</button>
+            </li>
+            <li class="product__item">
+              <img
+                src="./img/png/product-endourologiya.png"
+                alt="product-endourologiya"
+                class="product__item-img"
+              />
+              <h3 class="product__item-title">ЭНДОУРОЛОГИЯ</h3>
+              <button class="btn product__item-btn">Посмотреть все</button>
+            </li>
+            <li class="product__item">
+              <img
+                src="./img/png/product-aritmologiya.png"
+                alt="product-aritmologiya"
+                class="product__item-img"
+              />
+              <h3 class="product__item-title">АРИТМОЛОГИЯ</h3>
+              <button class="btn product__item-btn">Посмотреть все</button>
+            </li>
+          </ul>
+          <a href="#" class="product__link"
+            >Перейти в каталог нашей продукции
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_502_67)">
+                <path
+                  d="M30 15C30 6.7285 23.2715 -2.94112e-07 15 -6.55671e-07C6.7285 -1.01723e-06 -2.94112e-07 6.72849 -6.55671e-07 15C-1.01723e-06 23.2715 6.72967 30 15 30C23.2703 30 30 23.2715 30 15ZM2.32377 15C2.32377 8.01123 8.01006 2.32377 15 2.32377C21.9899 2.32377 27.6762 8.01123 27.6762 15C27.6762 21.9899 21.9899 27.6762 15 27.6762C8.01006 27.6762 2.32377 21.9888 2.32377 15Z"
+                  fill="#0D4C93"
+                />
+                <path
+                  d="M13.3966 21.6344L19.2061 15.825C19.6569 15.3718 19.6569 14.6399 19.2061 14.1867L13.3966 8.37725C12.9621 8.0043 12.3196 8.0043 11.885 8.37725C11.3982 8.79438 11.3413 9.52867 11.7584 10.0155L16.7429 15L11.7583 19.9962C11.3075 20.4493 11.3075 21.1813 11.7583 21.6344C12.2115 22.0853 12.9435 22.0853 13.3966 21.6344Z"
+                  fill="#0D4C93"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_502_67">
+                  <rect
+                    width="30"
+                    height="30"
+                    fill="white"
+                    transform="translate(30) rotate(90)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </div>
+      </section>
+      <!-- product section end -->
+      <!-- service section start -->
+      <section class="service">
+        <h2 class="service__title">УСЛУГИ</h2>
+        <ul class="service__list">
+          <div class="container">
+            <li class="service__item">
+              <img
+                src="./img/png/servic-1.png"
+                alt="servic-1"
+                class="service__item-img"
+                width="388px"
+                height="259px"
+              />
+              <h3 class="service__item-title">СЕРВИС ОБОРУДОВАНИЯ</h3>
+              <p class="service__item-descr">
+                Компания предоставляет сервисное обслуживание по всем
+                предоставляемым продуктам. У наших инженеров имеется опыт и
+                сертификаты фирм производителей......
+              </p>
+              <a href="" class="btn service__item-btn">Подробнее</a>
+            </li>
+            <li class="service__item">
+              <img
+                src="./img/png/servic-2.png"
+                alt="servic-2"
+                class="service__item-img"
+                width="388px"
+                height="259px"
+              />
+              <h3 class="service__item-title">РЕГИСТРАЦИИ</h3>
+              <p class="service__item-descr">
+                Обеспечение получения разрешительных документов,
+                регистрационного удостоверения на изделия медицинского
+                назначения Подготовка объектов к проведению ....
+              </p>
+              <a href="" class="btn service__item-btn">Подробнее</a>
+            </li>
+            <li class="service__item">
+              <img
+                src="./img/png/servic-3.png"
+                alt="servic-3"
+                class="service__item-img"
+                width="388px"
+                height="259px"
+              />
+              <h3 class="service__item-title">УСЛУГИ ЛОГИСТИКИ</h3>
+              <p class="service__item-descr">
+                Компания предоставляет сервисное обслуживание по всем
+                предоставляемым продуктам. У наших инженеров имеется опыт и
+                сертификаты фирм производителей.....
+              </p>
+              <a href="" class="btn service__item-btn">Подробнее</a>
+            </li>
+          </div>
+        </ul>
+      </section>
+      <!-- service section end -->
+      <!-- about section start -->
+      <section class="about">
+        <h2 class="about__title">О КОМПАНИИ</h2>
+        <div class="container">
+          <img
+            src="./img/svg/about-hero.svg"
+            alt="about-hero"
+            class="about__img"
+            width="574px"
+            height="574px"
+          />
+          <div class="about__info">
+            <p class="about__descr">
+              Группа компаний MEDOL создавалась высококвалифицированными
+              специалистами в сфере медицины, инженерии и экономики, за плечами
+              которых значительный опыт на рынке высоких медицинских технологий,
+              которая имеет свои представительства в разных уголках Земли. В
+              2011 году MEDOL зарегистрировал в Узбекистане ИП ООО “Medical
+              Online Services". Цель компании построить прозрачный долгосрочный
+              бизнес, принести пользу обществу путем развития и внедрения
+              передовых технологий в систему здравоохранения Республики
+              Узбекистан.
+            </p>
+            <a href="" class="btn about__link">Узнать больше</a>
+          </div>
+        </div>
+      </section>
+      <!-- about section send -->
+      <!-- News section start -->
+      <section class="news">
+        <div class="container">
+          <h2 class="news__title">НОВОСТИ</h2>
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">@@include('./chunk/newslist.html')</div>
+              <div class="swiper-slide">@@include('./chunk/newslist.html')</div>
+              <div class="swiper-slide">@@include('./chunk/newslist.html')</div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <div class="wrapper">
+            <a href="#" class="news__link"
+              >Посмотреть все новости
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_502_221)">
+                  <path
+                    d="M30 14.7546C30 6.76329 23.2715 0.262695 15 0.262695C6.7285 0.262694 1.6232e-06 6.76329 1.27389e-06 14.7546C9.24573e-07 22.746 6.72967 29.2466 15 29.2466C23.2703 29.2466 30 22.746 30 14.7546ZM2.32377 14.7546C2.32377 8.00258 8.01006 2.50776 15 2.50776C21.9899 2.50776 27.6762 8.00258 27.6762 14.7546C27.6762 21.5078 21.9899 27.0015 15 27.0015C8.01006 27.0015 2.32377 21.5067 2.32377 14.7546Z"
+                    fill="#0d4c93"
+                  />
+                  <path
+                    d="M13.3966 21.1643L19.2061 15.5517C19.6569 15.1138 19.6569 14.4067 19.2061 13.9689L13.3966 8.35618C12.9621 7.99586 12.3196 7.99586 11.885 8.35618C11.3982 8.75918 11.3413 9.4686 11.7584 9.93897L16.7429 14.7547L11.7583 19.5816C11.3075 20.0194 11.3075 20.7265 11.7583 21.1643C12.2115 21.5999 12.9435 21.5999 13.3966 21.1643Z"
+                    fill="#0d4c93"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_502_221">
+                    <rect
+                      width="28.9839"
+                      height="30"
+                      fill="white"
+                      transform="translate(30 0.262695) rotate(90)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg> </a
+            ><a href="#" class="news__link"
+              >Подписаться на новости
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_502_221)">
+                  <path
+                    d="M30 14.7546C30 6.76329 23.2715 0.262695 15 0.262695C6.7285 0.262694 1.6232e-06 6.76329 1.27389e-06 14.7546C9.24573e-07 22.746 6.72967 29.2466 15 29.2466C23.2703 29.2466 30 22.746 30 14.7546ZM2.32377 14.7546C2.32377 8.00258 8.01006 2.50776 15 2.50776C21.9899 2.50776 27.6762 8.00258 27.6762 14.7546C27.6762 21.5078 21.9899 27.0015 15 27.0015C8.01006 27.0015 2.32377 21.5067 2.32377 14.7546Z"
+                    fill="#0d4c93"
+                  />
+                  <path
+                    d="M13.3966 21.1643L19.2061 15.5517C19.6569 15.1138 19.6569 14.4067 19.2061 13.9689L13.3966 8.35618C12.9621 7.99586 12.3196 7.99586 11.885 8.35618C11.3982 8.75918 11.3413 9.4686 11.7584 9.93897L16.7429 14.7547L11.7583 19.5816C11.3075 20.0194 11.3075 20.7265 11.7583 21.1643C12.2115 21.5999 12.9435 21.5999 13.3966 21.1643Z"
+                    fill="#0d4c93"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_502_221">
+                    <rect
+                      width="28.9839"
+                      height="30"
+                      fill="white"
+                      transform="translate(30 0.262695) rotate(90)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- News section end -->
+      <section class="partners">
+        <div class="container">
+          <h2 class="partners__title">ПАРТНЕРЫ</h2>
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                @@include("./chunk/partnerslist.html")
+              </div>
+              <div class="swiper-slide">
+                @@include("./chunk/partnerslist.html")
+              </div>
+              <div class="swiper-slide">
+                @@include("./chunk/partnerslist.html")
+              </div>
+              ...
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-left">
+        <div class="footer__contact">
+          <h3 class="footer__title">Контакты</h3>
+          @@include('./chunk/footer.html')
+        </div>
+        <div class="footer__info">
+          <img
+            src="../img/svg/medol-logo.svg"
+            alt="medol-logo"
+            class="footer__info-img"
+            width="200px"
+            height="58px"
+          />
+          <p class="footer__info-descr">
+            Наша цель – построить прозрачный, долгосрочный бизнес, приносить
+            огромную пользу населению, путем решения глобальных вопросов.
+            Внедряя инновационные технологии на рынок Узбекистана.
+          </p>
+        </div>
+        <a href="#" class="footer__link"
+          >© 2021 ООО «Medical Online Services»</a
+        >
+      </div>
+      <div class="footer-right">
+        <div class="wrapper">
+          <ul class="footer__list">
+            <li class="footer__item footer__title">О компании</li>
+            <li class="footer__item">История</li>
+            <li class="footer__item">Партнеры</li>
+            <li class="footer__item">Вакансии</li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__item footer__title">Продукция</li>
+            <li class="footer__item">Эндоваскулярная хирургия</li>
+            <li class="footer__item">Аритмология</li>
+            <li class="footer__item">Кардиохирургия</li>
+            <li class="footer__item">Лабораторная диагностика</li>
+            <li class="footer__item">Хирургия</li>
+            <li class="footer__item">Эндоурология</li>
+            <li class="footer__item">Нейрохирургия</li>
+            <li class="footer__item">Анестезиология и реанимация</li>
+            <li class="footer__item">Диабет</li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__item footer__title">Услуги</li>
+            <li class="footer__item">Сервис</li>
+            <li class="footer__item">Регистрации</li>
+            <li class="footer__item">Услуги логистики</li>
+          </ul>
+        </div>
+        <a href="#" class="footer__link uz-link"
+          >Сайт разработан компанией
+          <span class="uz-link__link"> www.uz</span></a
+        >
+      </div>
+    </footer>
+    <!-- Footer -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+      integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

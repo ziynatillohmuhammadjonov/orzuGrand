@@ -1,0 +1,305 @@
+main {
+  flex-grow: 1;
+}
+// Product start
+.product {
+  margin-bottom: 6.9rem;
+  &__title {
+    font-family: $font-family;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: $primary-color;
+    margin-bottom: 6.2rem;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-bottom: 8.1rem;
+  }
+  &__item {
+    width: 413px;
+    height: 439px;
+    background-image: $product-linear-gradient;
+    opacity: 0.9;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 0 7.1rem;
+    &-img {
+    }
+    &-title {
+      font-family: $font-family;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: 0.105em;
+      text-align: center;
+      margin-bottom: 2.7rem;
+    }
+    &-btn {
+      font-size: 2rem !important;
+      padding: 21px 58px !important;
+      margin-bottom: 4.2rem;
+    }
+  }
+  &__link {
+    font-family: $font-family;
+    color: $primary-color;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    &:hover {
+      color: $hover-color;
+    }
+  }
+}
+// Product end
+// Service start
+.service {
+  margin-bottom: 6.8rem;
+  &__title {
+    font-family: $font-family;
+    color: $primary-color;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 6.8rem;
+  }
+  &__list {
+    background-image: url(../../img/png/servis-bg.png);
+    background-repeat: no-repeat;
+    .container {
+      padding: 78px 0 0 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__item {
+    border-radius: 35px;
+    background: #ffffff;
+    max-width: 384px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 4.3rem;
+    position: relative;
+    margin-bottom: 11.2rem;
+    &-img {
+      border-radius: 35px 35px 0 0;
+      margin-bottom: 2.2rem;
+    }
+    &-title {
+      font-family: $font-family;
+      color: $primary-color;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 23px;
+      letter-spacing: 0.065em;
+      margin-bottom: 1.4rem;
+    }
+    &-descr {
+      font-family: $font-family;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: center;
+      margin-bottom: 7.2rem;
+    }
+    &-btn {
+      position: absolute;
+      bottom: -35px;
+    }
+  }
+  &__item:not(:last-child) {
+    margin-right: 9.8rem;
+  }
+}
+// servise end
+// About start
+.about {
+  margin-bottom: 10rem;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+  }
+  &__img {
+    z-index: 2;
+  }
+  &__title {
+    width: 100%;
+    font-family: $font-family;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: $primary-color;
+    margin-bottom: 1.1rem;
+  }
+  &__info {
+    position: absolute;
+    right: 0;
+    z-index: 0;
+    max-width: 1023px;
+    max-height: 504px;
+    padding: 57px 40px 57px 28rem;
+    background-color: $product-linear-gradient;
+    border-radius: 0px, 50px, 50px, 0px;
+  }
+  &__descr {
+    font-family: $font-family;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 35px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    margin-bottom: 5rem;
+  }
+}
+// About end
+// news start
+.news {
+  &__title {
+    font-family: $font-family;
+    color: $primary-color;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  &__list {
+    padding-top: 14rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 9.4rem;
+  }
+  &__item {
+    position: relative;
+    background-image: $product-linear-gradient;
+    border-radius: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    max-width: 384px;
+    padding: 120px 56px 54px;
+    &-img {
+      border-radius: 4rem;
+      margin-bottom: 2.3rem;
+      position: absolute;
+      top: -25%;
+    }
+    &-title {
+      font-family: "Montserrat";
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: center;
+      margin-bottom: 18px;
+      color: $primary-color;
+    }
+    &-time {
+      font-family: "Montserrat";
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: center;
+      margin-bottom: 13px;
+      color: $primary-color;
+    }
+    &-descr {
+      font-family: "Montserrat";
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+    &-btn {
+      position: absolute;
+      bottom: -35px;
+    }
+  }
+  &__item:not(:last-child) {
+    margin-right: 8.3rem;
+  }
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 33.5rem;
+    margin-bottom: 10.6rem;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-family: $font-family;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $primary-color;
+    &:hover {
+      color: $hover-color;
+    }
+    &:hover svg path {
+      fill: $hover-color;
+    }
+  }
+}
+// news end
+// partners start
+.partners {
+  text-align: center;
+  &__title {
+    font-family: $primary-color;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 47px;
+    letter-spacing: 0em;
+    color: $primary-color;
+    margin-bottom: 5.6rem;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 38px 26px;
+    margin-bottom: 13rem;
+  }
+  &__item {
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    max-width: 275px;
+    background-image: $product-linear-gradient;
+    border-radius: 3rem;
+  }
+}
+// partners end

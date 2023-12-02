@@ -1,0 +1,17 @@
+.btn {
+  padding: 21px 71px;
+  color: #ffffff;
+  font-family: $font-family;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  background-image: $linear-gardient;
+  border-radius: 35px;
+  border-color: inherit;
+  border: none;
+  &:hover {
+    background: $hover-color;
+  }
+}

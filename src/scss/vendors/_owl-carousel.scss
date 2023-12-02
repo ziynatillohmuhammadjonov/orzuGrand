@@ -1,0 +1,13 @@
+.swiper-button-prev,
+.swiper-button-next {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100%;
+
+  background-image: $linear-gardient;
+  color: #ffffff;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 2rem;
+}

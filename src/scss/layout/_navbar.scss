@@ -1,0 +1,41 @@
+.sitenav {
+  margin-bottom: 7.6rem;
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__item:first-child {
+    a {
+      border-radius: 35px 0 0 35px;
+    }
+  }
+  &__item:last-child {
+    a {
+      border-radius: 0 35px 35px 0;
+    }
+  }
+  &__link {
+    display: inline-block;
+    padding: 2.4rem 4rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #0d4c93;
+    background: #fff;
+    position: relative;
+    &:hover {
+      color: #00c9c9;
+    }
+    &:hover::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      background: #00c9c9;
+      border-radius: 100%;
+      position: absolute;
+      right: 10%;
+      top: 15%;
+    }
+  }
+}
