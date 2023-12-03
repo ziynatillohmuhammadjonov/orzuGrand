@@ -1,20 +1,27 @@
 .cover {
   position: fixed;
   background-color: #000;
+  display: flex;
+  justify-content: center;
   opacity: 0.5;
   z-index: 3;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100vmax;
+  width: 100vw;
+  height: 100vh;
 }
 .modal {
-  position: absolute;
-  width: 100%;
+  position: fixed;
+  top: 5rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  // left: calc(100vw-"592px");
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  padding: 20rem 0;
+  // padding: 5rem 0;
   z-index: 3;
 
   &__form {

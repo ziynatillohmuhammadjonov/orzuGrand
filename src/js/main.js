@@ -40,7 +40,11 @@ closeBtn.addEventListener("click", () => {
   cover.classList.add("modal-block");
   modal.classList.add("modal-block");
 });
-cover.addEventListener("click", (e) => {
+modal.addEventListener("click", () => {
+  cover.classList.add("modal-block");
+  modal.classList.add("modal-block");
+});
+cover.addEventListener("click", () => {
   cover.classList.add("modal-block");
   modal.classList.add("modal-block");
 });
@@ -48,3 +52,5 @@ forum.addEventListener("submit", () => {
   cover.classList.add("modal-block");
   modal.classList.add("modal-block");
 });
+
+// gsap action
